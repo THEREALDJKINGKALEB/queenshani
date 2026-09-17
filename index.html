@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Queen Shani 👑🦋</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+background:
+radial-gradient(circle at 50% 0%,#46142f 0%,#160812 40%,#050307 100%);
+color:#fff;
+font-family:Arial,sans-serif;
+overflow-x:hidden;
+}
+
+body:before{
+content:"";
+position:fixed;
+inset:0;
+pointer-events:none;
+background-image:radial-gradient(#fff 1px,transparent 1px);
+background-size:42px 42px;
+opacity:.08;
+}
+
+section{
+min-height:100vh;
+padding:70px 20px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.container{
+width:100%;
+max-width:760px;
+}
+
+.center{text-align:center}
+
+.crown{
+font-size:75px;
+animation:float 3s ease-in-out infinite;
+}
+
+h1{
+font-size:clamp(50px,14vw,100px);
+margin:15px 0;
+line-height:.9;
+background:linear-gradient(90deg,#fff,#ff78b7,#ffd36a,#fff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+h2{
+font-size:32px;
+margin-top:0;
+}
+
+h3{font-size:22px}
+
+p{
+font-size:18px;
+line-height:1.75;
+}
+
+.card{
+background:rgba(255,255,255,.07);
+border:1px solid rgba(255,255,255,.14);
+border-radius:30px;
+padding:30px;
+margin:25px 0;
+backdrop-filter:blur(15px);
+box-shadow:0 25px 70px rgba(0,0,0,.35);
+}
+
+button{
+border:0;
+border-radius:999px;
+padding:16px 25px;
+background:linear-gradient(135deg,#d71955,#ff71ad);
+color:#fff;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 10px 35px rgba(255,70,130,.3);
+margin:7px;
+}
+
+button:active{transform:scale(.95)}
+
+.hidden{display:none}
+
+.letter{
+text-align:left;
+white-space:pre-line;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:14px;
+}
+
+.tile{
+padding:22px;
+border-radius:22px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.emoji{
+font-size:40px;
+display:block;
+margin-bottom:10px;
+}
+
+.timeline{
+border-left:2px solid rgba(255,120,180,.5);
+text-align:left;
+padding-left:25px;
+}
+
+.event{
+margin:25px 0;
+}
+
+.date{
+color:#ff91bf;
+font-weight:bold;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.photo{
+height:180px;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(135deg,#331125,#5b1c3e);
+border:1px dashed rgba(255,255,255,.3);
+padding:15px;
+}
+
+.mood{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.moodResult{
+min-height:30px;
+margin-top:20px;
+font-weight:bold;
+}
+
+.gift{
+font-size:90px;
+cursor:pointer;
+display:inline-block;
+animation:float 2.5s ease-in-out infinite;
+}
+
+.gift:hover{
+transform:scale(1.08);
+}
+
+.progress{
+height:7px;
+background:rgba(255,255,255,.12);
+border-radius:10px;
+overflow:hidden;
+margin:25px 0;
+}
+
+.progress span{
+display:block;
+height:100%;
+width:0;
+background:linear-gradient(90deg,#ff4f9a,#ffd36a);
+transition:width 2s;
+}
+
+footer{
+padding:40px 20px 70px;
+text-align:center;
+opacity:.55;
+}
+
+.floating{
+position:fixed;
+bottom:-40px;
+pointer-events:none;
+z-index:100;
+animation:rise 5s linear forwards;
+}
+
+.fade{
+animation:fade 1s ease forwards;
+}
+
+@keyframes float{
+50%{transform:translateY(-12px)}
+}
+
+@keyframes rise{
+to{
+transform:translateY(-115vh) rotate(35deg);
+opacity:0;
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:none;
+}
+}
+
+@media(max-width:500px){
+.card{padding:23px}
+.gallery{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section>
+<div class="container center">
+
+<div class="crown">👑</div>
+
+<p>Someone very special has entered the page...</p>
+
+<h1>Queen Shani</h1>
+
+<p>
+A tiny corner of the internet made just to put
+a smile on your face. 🦋
+</p>
+
+<br>
+
+<button onclick="openPage()">
+Open your surprise ❤️
+</button>
+
+</div>
+</section>
+
+
+<div id="page" class="hidden">
+
+
+<!-- ========================= -->
+<!-- 1. WELCOME -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<span class="emoji">🦋</span>
+
+<h2>Welcome, Queen Shani</h2>
+
+<p>
+You officially found the secret page.
+</p>
+
+<p>
+There isn't a complicated reason for this.
+I just wanted to create something that was
+made specifically with you in mind.
+</p>
+
+<button onclick="scrollNext()">
+Keep going 👀
+</button>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 2. LETTER -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card fade">
+
+<h2>💌 A letter for you</h2>
+
+<p class="letter">
+
+Shani ❤️
+
+I wanted to make you something instead of
+just sending another message.
+
+You genuinely mean a lot to me.
+
+I appreciate your personality, your kindness,
+your laughs, your little moments and the way
+you can make an ordinary conversation feel
+like something worth remembering.
+
+I hope you never feel like you have to be
+perfect around me.
+
+You can be yourself.
+
+You can have good days.
+You can have difficult days.
+You can laugh.
+You can be quiet.
+You can simply exist.
+
+And you still deserve kindness.
+
+So if you ever come back to this page on a
+rough day, let it remind you of one thing:
+
+You matter.
+
+You are appreciated.
+
+And you deserve reasons to smile.
+
+Take care of yourself, Queen Shani. 👑🦋
+
+— Kaleb ❤️
+
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 3. APPRECIATION -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<h2>🌹 Things I appreciate</h2>
+
+<div class="grid">
+
+<div class="tile">
+<span class="emoji">😂</span>
+<h3>Your humour</h3>
+<p>
+The random conversations and moments that
+somehow become hilarious.
+</p>
+</div>
+
+<div class="tile">
+<span class="emoji">🦋</span>
+<h3>Your personality</h3>
+<p>
+You are uniquely you, and that's something
+worth appreciating.
+</p>
+</div>
+
+<div class="tile">
+<span class="emoji">❤️</span>
+<h3>Your heart</h3>
+<p>
+The way you care about the people around you
+means something.
+</p>
+</div>
+
+<div class="tile">
+<span class="emoji">👑</span>
+<h3>Your individuality</h3>
+<p>
+You don't need to copy anyone else.
+You are Queen Shani.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 4. TIMELINE -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card fade">
+
+<h2 class="center">📖 Our little timeline</h2>
+
+<div class="timeline">
+
+<div class="event">
+<div class="date">Chapter One</div>
+<h3>The beginning</h3>
+<p>
+Two people who didn't know exactly where
+their story would go.
+</p>
+</div>
+
+<div class="event">
+<div class="date">Chapter Two</div>
+<h3>The conversations</h3>
+<p>
+The jokes, random messages, serious talks
+and everything in between.
+</p>
+</div>
+
+<div class="event">
+<div class="date">Chapter Three</div>
+<h3>The memories</h3>
+<p>
+Little moments that became memories worth
+keeping.
+</p>
+</div>
+
+<div class="event">
+<div class="date">Chapter Four</div>
+<h3>Still writing...</h3>
+<p>
+The story doesn't need to be rushed.
+One chapter at a time. ❤️
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 5. MEMORY GALLERY -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<h2>📸 Memory Wall</h2>
+
+<p>
+These are placeholders — replace them with
+your own favourite pictures or memories.
+</p>
+
+<div class="gallery">
+
+<div class="photo">
+📷<br>
+Add your favourite photo here
+</div>
+
+<div class="photo">
+🦋<br>
+Add another memory here
+</div>
+
+<div class="photo">
+❤️<br>
+A moment you'll never forget
+</div>
+
+<div class="photo">
+👑<br>
+Queen Shani moment
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 6. SHANI BE BETTER PACKAGE -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<h2>🦋 Shani Be Better Package</h2>
+
+<div class="grid">
+
+<div class="tile">
+<span class="emoji">🫂</span>
+<b>Hugs</b>
+<p>Unlimited supply.</p>
+</div>
+
+<div class="tile">
+<span class="emoji">😂</span>
+<b>Laughter</b>
+<p>Required whenever possible.</p>
+</div>
+
+<div class="tile">
+<span class="emoji">🎵</span>
+<b>Music</b>
+<p>For every mood.</p>
+</div>
+
+<div class="tile">
+<span class="emoji">🍗</span>
+<b>Food</b>
+<p>Because food is important. 😂</p>
+</div>
+
+<div class="tile">
+<span class="emoji">😴</span>
+<b>Rest</b>
+<p>No guilt for taking time to breathe.</p>
+</div>
+
+<div class="tile">
+<span class="emoji">👑</span>
+<b>Reminder</b>
+<p>You are still Queen Shani.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 7. MOOD BUTTON -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<h2>💭 How are you feeling?</h2>
+
+<p>
+Pick a button and see your little message.
+</p>
+
+<div class="mood">
+
+<button onclick="mood('happy')">😊 Happy</button>
+<button onclick="mood('sad')">🥺 Sad</button>
+<button onclick="mood('tired')">😴 Tired</button>
+<button onclick="mood('stressed')">😵 Stressed</button>
+<button onclick="mood('bored')">😭 Bored</button>
+
+</div>
+
+<div id="moodResult" class="moodResult"></div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 8. MUSIC -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<h2>🎵 The soundtrack</h2>
+
+<p>
+Every story needs music.
+</p>
+
+<p>
+Add your song here by replacing the button
+with your chosen music link.
+</p>
+
+<button onclick="music()">
+🎧 Our song
+</button>
+
+<p id="musicText"></p>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 9. GIFT -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<h2>🎁 There's a gift here...</h2>
+
+<p>
+You have to open it yourself though 👀
+</p>
+
+<div class="gift" onclick="openGift()">
+🎁
+</div>
+
+<div id="giftMessage"></div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ========================= -->
+<!-- 10. FINAL -->
+<!-- ========================= -->
+
+<section>
+<div class="container">
+
+<div class="card center fade">
+
+<div style="font-size:70px">
+👑🦋❤️
+</div>
+
+<h2>One last thing...</h2>
+
+<p>
+You made it all the way to the end.
+</p>
+
+<div class="progress">
+<span id="progress"></span>
+</div>
+
+<button onclick="finalSurprise()">
+Open the final message 💗
+</button>
+
+<div id="final"></div>
+
+</div>
+
+</div>
+</section>
+
+</div>
+
+
+<footer>
+Made with ❤️ by Kaleb<br>
+For Queen Shani 👑🦋
+</footer>
+
+
+<script>
+
+function openPage(){
+
+document.getElementById("page")
+.classList.remove("hidden");
+
+hearts();
+
+setTimeout(function(){
+
+document.getElementById("page")
+.scrollIntoView({behavior:"smooth"});
+
+},200);
+
+}
+
+
+function hearts(){
+
+const emojis=["❤️","🦋","💗","✨","👑"];
+
+for(let i=0;i<35;i++){
+
+const x=document.createElement("div");
+
+x.className="floating";
+
+x.innerHTML=
+emojis[Math.floor(Math.random()*emojis.length)];
+
+x.style.left=Math.random()*100+"vw";
+
+x.style.fontSize=
+(18+Math.random()*25)+"px";
+
+x.style.animationDuration=
+(3+Math.random()*3)+"s";
+
+document.body.appendChild(x);
+
+setTimeout(()=>{
+x.remove();
+},6000);
+
+}
+
+}
+
+
+function scrollNext(){
+
+window.scrollBy({
+top:window.innerHeight,
+behavior:"smooth"
+});
+
+}
+
+
+function mood(type){
+
+let message="";
+
+if(type==="happy"){
+message="Keep that smile going, Queen Shani 👑❤️";
+}
+
+if(type==="sad"){
+message="Come here 🫂. You don't have to fix everything right now.";
+}
+
+if(type==="tired"){
+message="Rest mode activated 😴🦋. Be kind to yourself.";
+}
+
+if(type==="stressed"){
+message="Breathe. One thing at a time. You've got this ❤️";
+}
+
+if(type==="bored"){
+message="Emergency laughter department activated 😂";
+}
+
+document.getElementById("moodResult")
+.innerHTML=message;
+
+hearts();
+
+}
+
+
+function music(){
+
+document.getElementById("musicText")
+.innerHTML=
+"🎶 Your chosen song goes here. Add its link in the HTML.";
+
+}
+
+
+function openGift(){
+
+hearts();
+
+document.getElementById("giftMessage")
+.innerHTML=`
+
+<h3>🎁 Surprise!</h3>
+
+<p>
+The real gift isn't inside the box.
+</p>
+
+<p>
+It's the reminder that somebody took the
+time to make an entire webpage just to make
+you smile. 🦋❤️
+</p>
+
+`;
+
+}
+
+
+function finalSurprise(){
+
+document.getElementById("progress")
+.style.width="100%";
+
+hearts();
+
+document.getElementById("final")
+.innerHTML=`
+
+<h3>👑 Queen Shani ❤️</h3>
+
+<p>
+Whatever today looks like,
+I hope you find at least one reason to smile.
+</p>
+
+<p>
+You don't need to be perfect.
+You don't need to have everything figured out.
+Just keep being you.
+</p>
+
+<p>
+And remember...
+
+<br><br>
+
+<b>
+You are appreciated.
+You are important.
+You are you.
+</b>
+
+<br><br>
+
+🦋👑❤️
+
+</p>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>
